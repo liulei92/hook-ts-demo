@@ -299,7 +299,7 @@ module.exports = function(webpackEnv) {
         }),
         ...(modules.webpackAliases || {}),
         '@': paths.appSrc,
-        '@components': paths.appComponents,
+        '@com': paths.appComponents,
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding

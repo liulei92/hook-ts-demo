@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Suspense, useEffect } from 'react'
 // import logo from './logo.svg'
-import { BrowserRouter as Router, Switch, Route, Redirect, Link } from 'react-router-dom'
-import routes from './router'
-import RouteWithSubRoutes from './components/RouteWithSubRoutes'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { Routes, Menus } from './router'
+import RouteWithSubRoutes from '@/components/RouteWithSubRoutes'
 import { RouteInterface } from './assets/interface'
 
 // function App () {
@@ -27,22 +27,29 @@ import { RouteInterface } from './assets/interface'
 // }
 
 const App: React.FC = () => {
+  useEffect(() => {
+    console.log('https://juejin.im/post/5e652741518825494822d569')
+  }, [])
+
   return (
     <Router>
       <div className='App'>
         <header className='App-header'>
-          <ul>
-            <li><Link to='/home'>Home 首页</Link></li>
-          </ul>
+          {/* <ul>
+            <li><Link to='/home'>Home</Link></li>
+          </ul> */}
+          <Menus />
         </header>
 
-        <Switch>
-          <Route path='/' exact render={() => (<Redirect to='/home'/>)} />
-          {routes.map((route: RouteInterface, i: number) => {
-            return RouteWithSubRoutes(route, i)
-          })}
-          <Redirect from='/*' to='/' />
-        </Switch>
+        <Suspense fallback={null}>
+          <Switch>
+            <Route path='/' exact render={() => (<Redirect to='/home'/>)} />
+            {Routes.map((route: RouteInterface, i: number) => {
+              return RouteWithSubRoutes(route, i)
+            })}
+            <Redirect from='/*' to='/' />
+          </Switch>
+        </Suspense>
       </div>
     </Router>
   )

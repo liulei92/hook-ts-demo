@@ -22,7 +22,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  // font-size: calc(10px + 2vmin);
+  ul {
+    list-style: none;
+    font-size: 1.25rem;
+    display: flex;
+    li + li {
+      margin-left: 10px;
+    }
+  }
+  a {
+    color: #61dafb;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &.active {
+      color: darken(#61dafb, 30%);
+    }
+  }
 }
 
 .App-link {

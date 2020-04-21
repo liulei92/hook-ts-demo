@@ -1,10 +1,2 @@
-import Home from '../views/Home'
-
-const routes = [
-  {
-    path: '/home',
-    component: Home
-  }
-]
-
-export default routes
+export { default as Routes } from './Routes'
+export { default as Menus } from './Menus'

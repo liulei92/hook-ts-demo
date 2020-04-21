@@ -10,6 +10,16 @@ const routes = [
     name: 'About',
     path: '/about',
     component: lazy(() => import(/* webpackChunkName: "about" */ '@/views/About'))
+  },
+  {
+    name: 'UseState',
+    path: '/useState',
+    component: lazy(() => import(/* webpackChunkName: "useState" */ '@/views/UseState'))
+  },
+  {
+    name: 'UseEffect',
+    path: '/useEffect',
+    component: lazy(() => import(/* webpackChunkName: "useEffect" */ '@/views/UseEffect'))
   }
 ]
 

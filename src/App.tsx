@@ -1,6 +1,8 @@
 import React, { Suspense, useEffect } from 'react'
+import { Provider } from 'mobx-react'
 // import logo from './logo.svg'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import store from '@/store'
 import { Routes, Menus } from './router'
 import RouteWithSubRoutes from '@/components/RouteWithSubRoutes'
 import { RouteInterface } from './assets/interface'
@@ -32,26 +34,28 @@ const App: React.FC = () => {
   }, [])
 
   return (
-    <Router>
-      <div className='App'>
-        <header className='App-header'>
-          {/* <ul>
-            <li><Link to='/home'>Home</Link></li>
-          </ul> */}
-          <Menus />
-        </header>
+    <Provider {...store}>
+      <Router>
+        <div className='App'>
+          <header className='App-header'>
+            {/* <ul>
+              <li><Link to='/home'>Home</Link></li>
+            </ul> */}
+            <Menus />
+          </header>
 
-        <Suspense fallback={null}>
-          <Switch>
-            <Route path='/' exact render={() => (<Redirect to='/home'/>)} />
-            {Routes.map((route: RouteInterface, i: number) => {
-              return RouteWithSubRoutes(route, i)
-            })}
-            <Redirect from='/*' to='/' />
-          </Switch>
-        </Suspense>
-      </div>
-    </Router>
+          <Suspense fallback={null}>
+            <Switch>
+              <Route path='/' exact render={() => (<Redirect to='/home'/>)} />
+              {Routes.map((route: RouteInterface, i: number) => {
+                return RouteWithSubRoutes(route, i)
+              })}
+              <Redirect from='/*' to='/' />
+            </Switch>
+          </Suspense>
+        </div>
+      </Router>
+    </Provider>
   )
 }
 

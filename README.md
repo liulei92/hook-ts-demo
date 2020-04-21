@@ -21,6 +21,14 @@ node-sass classnames mobx mobx-react react-router-dom
 增加 github actions
 .github/workflows/ci.yaml
 
+生成秘钥
+ssh-keygen -f github-deploy-key # 三次回车即刻
+
+github-deploy-key 添加至 settings/secrets 点击 Add new secrets，ACCESS_TOKEN
+
+## github-deploy-key.pub 添加至 settings/keys 点击 Add new key
+
+
 ```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

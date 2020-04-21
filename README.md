@@ -21,12 +21,11 @@ node-sass classnames mobx mobx-react react-router-dom
 增加 github actions
 .github/workflows/ci.yaml
 
-生成秘钥
-ssh-keygen -f github-deploy-key # 三次回车即刻
+## 使用github personal access token实现部署
 
-github-deploy-key 添加至 settings/secrets 点击 Add new secrets，ACCESS_TOKEN
+类似于 Google 两步验证中的备用验证码，不过google token是单次生成(可见/查询)使用后销毁，github personal token是单次生成销毁(不可见)多次使用。
 
-## github-deploy-key.pub 添加至 settings/keys 点击 Add new key
+依次进入 Settings >> Developer settings >> Personal access tokens，点击 Generate new token。 ACCESS_TOKEN
 
 
 ```

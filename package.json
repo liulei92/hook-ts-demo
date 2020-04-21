@@ -147,5 +147,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage": "https://liulei92.github.io/hook-ts-demo"
 }

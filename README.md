@@ -1,3 +1,25 @@
+## Description
+
+```
+hook-ts-demo
+
+创建
+create-React-app --template typescript
+
+eject
+yarn eject
+
+
+增加依赖
+node-sass classnames mobx mobx-react react-router-dom
+
+增加 github actions
+.github/workflows/ci.yaml
+
+homepage
+Open [https://liulei92.github.io/hook-ts-demo](https://liulei92.github.io/hook-ts-demo)
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

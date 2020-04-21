@@ -1,0 +1,31 @@
+{
+  "files": {
+    "about.js": "/hook-ts-demo/static/js/about.ac2d6e1e.chunk.js",
+    "about.js.map": "/hook-ts-demo/static/js/about.ac2d6e1e.chunk.js.map",
+    "home.js": "/hook-ts-demo/static/js/home.3a4a61c8.chunk.js",
+    "home.js.map": "/hook-ts-demo/static/js/home.3a4a61c8.chunk.js.map",
+    "main.css": "/hook-ts-demo/static/css/main.4953bfc7.chunk.css",
+    "main.js": "/hook-ts-demo/static/js/main.915d999f.chunk.js",
+    "main.js.map": "/hook-ts-demo/static/js/main.915d999f.chunk.js.map",
+    "runtime-main.js": "/hook-ts-demo/static/js/runtime-main.a34ace64.js",
+    "runtime-main.js.map": "/hook-ts-demo/static/js/runtime-main.a34ace64.js.map",
+    "useEffect.js": "/hook-ts-demo/static/js/useEffect.10b3e266.chunk.js",
+    "useEffect.js.map": "/hook-ts-demo/static/js/useEffect.10b3e266.chunk.js.map",
+    "useState.js": "/hook-ts-demo/static/js/useState.b24351c7.chunk.js",
+    "useState.js.map": "/hook-ts-demo/static/js/useState.b24351c7.chunk.js.map",
+    "static/js/6.e4aa1001.chunk.js": "/hook-ts-demo/static/js/6.e4aa1001.chunk.js",
+    "static/js/6.e4aa1001.chunk.js.map": "/hook-ts-demo/static/js/6.e4aa1001.chunk.js.map",
+    "index.html": "/hook-ts-demo/index.html",
+    "precache-manifest.9840fed55c2c5cecd458453c2c9a811c.js": "/hook-ts-demo/precache-manifest.9840fed55c2c5cecd458453c2c9a811c.js",
+    "service-worker.js": "/hook-ts-demo/service-worker.js",
+    "static/css/main.4953bfc7.chunk.css.map": "/hook-ts-demo/static/css/main.4953bfc7.chunk.css.map",
+    "static/js/6.e4aa1001.chunk.js.LICENSE.txt": "/hook-ts-demo/static/js/6.e4aa1001.chunk.js.LICENSE.txt",
+    "static/js/home.3a4a61c8.chunk.js.LICENSE.txt": "/hook-ts-demo/static/js/home.3a4a61c8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a34ace64.js",
+    "static/js/6.e4aa1001.chunk.js",
+    "static/css/main.4953bfc7.chunk.css",
+    "static/js/main.915d999f.chunk.js"
+  ]
+}

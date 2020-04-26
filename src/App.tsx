@@ -54,6 +54,8 @@ const App: React.FC = () => {
             </Switch>
           </Suspense>
         </div>
+
+        <div className='sakura-bg' />
       </Router>
     </Provider>
   )

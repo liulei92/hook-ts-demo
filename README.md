@@ -25,7 +25,9 @@ node-sass classnames mobx mobx-react react-router-dom
 
 类似于 Google 两步验证中的备用验证码，不过google token是单次生成(可见/查询)使用后销毁，github personal token是单次生成销毁(不可见)多次使用。
 
-依次进入 Settings >> Developer settings >> Personal access tokens，点击 Generate new token。 ACCESS_TOKEN = 22ff43972c95d7b4d171cef8f1ea788aaa8cfbdd
+依次进入 Settings >> Developer settings >> Personal access tokens，点击 Generate new token
+
+ACCESS_TOKEN = d400f601686fa98092e09ea4ce6c7170b6820d90
 
 
 ```

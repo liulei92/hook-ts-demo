@@ -1,0 +1,1 @@
+{"version":3,"sources":["views/About/index.tsx"],"names":["About","props"],"mappings":"mHAAA,2BAQeA,UANS,SAAAC,GACtB,OACE","file":"static/js/about.994d819a.chunk.js","sourcesContent":["import React from 'react'\n\nconst About: React.FC = props => {\n  return (\n    <div>About</div>\n  )\n}\n\nexport default About\n"],"sourceRoot":""}

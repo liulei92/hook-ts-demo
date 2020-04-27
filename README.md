@@ -27,7 +27,8 @@ node-sass classnames mobx mobx-react react-router-dom
 
 依次进入 Settings >> Developer settings >> Personal access tokens，点击 Generate new token
 
-ACCESS_TOKEN = d400f601686fa98092e09ea4ce6c7170b6820d90
+_TOKEN = Njk4MzRjNThjNTlkZGE5MzhmZGFhZWE1YWE4Njg2NzhhNTllZTY5NA==
+base64
 
 
 ```

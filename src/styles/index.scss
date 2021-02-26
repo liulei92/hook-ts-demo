@@ -1,5 +1,7 @@
-@import-normalize; /* bring in normalize.css styles */
+@import '~normalize-css/normalize.css';
+@import '~antd/dist/antd.css';
 @import './app';
+@import './layout';
 
 body {
   margin: 0;

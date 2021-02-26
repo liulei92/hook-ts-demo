@@ -1,0 +1,41 @@
+.app-layout {
+  position: relative;
+  .ant-layout-sider {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    .logo {
+      height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 16px;
+    }
+  }
+  .site-layout {
+    margin-left: 200px;
+    transition: all 0.2s;
+    &.collapsed {
+      margin-left: 80px;
+    }
+    .site-layout-background {
+      background: #fff;
+    }
+    .ant-layout-header {
+      text-align: left;
+    }
+    .trigger {
+      font-size: 18px;
+      line-height: 64px;
+      padding: 0 24px;
+      cursor: pointer;
+      transition: color 0.3s;
+      &:hover {
+        color: #1890ff;
+      }
+    }
+    .site-layout-content {
+      padding: 24px 16px;
+      min-height: 280px;
+    }
+  }
+}

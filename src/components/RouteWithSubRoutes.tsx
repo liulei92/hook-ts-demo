@@ -1,6 +1,11 @@
-import React from 'react'
-import { Route } from 'react-router-dom'
-import { RouteInterface } from '@/assets/interface'
+import React from 'react';
+import { Route } from 'react-router-dom';
+import { RouteInterface } from '@/assets/interface';
+
+// interface IRoute {
+//   route: Routes.IRoutes,
+//   index: number
+// }
 
 const RouteWithSubRoutes: React.FC<RouteInterface> = (route, index: number) => {
   return (
@@ -11,7 +16,7 @@ const RouteWithSubRoutes: React.FC<RouteInterface> = (route, index: number) => {
         <route.component {...props} routes={route.routes} />
       )}
     />
-  )
-}
+  );
+};
 
-export default RouteWithSubRoutes
+export default RouteWithSubRoutes;

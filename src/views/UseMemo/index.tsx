@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react'
+import React, { useState, useMemo, useCallback } from 'react';
 
 // useMemo 类似于计算属性 compited
 
@@ -7,22 +7,22 @@ interface IShowInterface {
 }
 
 const Show: React.FC<IShowInterface> = props => {
-  const { time, children } = props
+  const { time, children } = props;
   const changeTime = (time: number): string => {
-    console.log('running ???')
-    return new Date(time).toISOString()
-  }
+    console.log('running ???');
+    return new Date(time).toISOString();
+  };
 
   const timeStr:string = useMemo(() => {
-    return changeTime(time)
-  }, [time])
+    return changeTime(time);
+  }, [time]);
 
   const timeYear = useCallback(
     () => {
-      return new Date(time).getFullYear()
+      return new Date(time).getFullYear();
     },
     [time]
-  )
+  );
 
   return (
     <div>
@@ -31,28 +31,28 @@ const Show: React.FC<IShowInterface> = props => {
       <p>Year is: {timeYear()}</p>
       <p>Random is: { children }</p>
     </div>
-  )
-}
+  );
+};
 
 Show.defaultProps = {
   time: 0
-}
+};
 
 const Result: React.FC = props => {
-  const [time, setTime] = useState<number>(0)
-  const [random, setRandom] = useState<number>(0)
+  const [time, setTime] = useState<number>(0);
+  const [random, setRandom] = useState<number>(0);
 
   return (
     <div>
       <button onClick={() => {
-        setTime(new Date().getTime())
+        setTime(new Date().getTime());
       }}>获取当前时间</button>
       <button onClick={() => {
-        setRandom(Math.random())
+        setRandom(Math.random());
       }}>获取随机数</button>
       <Show time={time}>{ random }</Show>
     </div>
-  )
-}
+  );
+};
 
-export default Result
+export default Result;

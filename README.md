@@ -18,6 +18,12 @@ yarn eject
 增加依赖
 node-sass classnames mobx mobx-react react-router-dom
 
+增加依赖
+使用antd 4.* yarn add antd
+使用normalize-css
+使用 dayjs, antd-dayjs-webpack-plugin  A webpack plugin for Day.js替换moments
+
+
 增加 github actions
 .github/workflows/ci.yaml
 

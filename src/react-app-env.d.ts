@@ -64,3 +64,27 @@ declare module '*.module.sass' {
   const classes: { readonly [key: string]: string };
   export default classes;
 }
+
+// 增加store
+declare namespace Stores {
+  type AppStore = {
+    collapsed: boolean,
+    year: number,
+    developer: string,
+    toggleCollapsed: (v: boolean) => void
+  }
+}
+
+// 增加router
+declare namespace Routes {
+  type IRoute = {
+    name?: string;
+    path: string;
+    component?: any,
+    routes?: Array<IRoute>
+  }
+
+  interface IRoutes {
+    [index:number]: IRoute
+  }
+}

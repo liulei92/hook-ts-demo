@@ -63,7 +63,7 @@ const App: React.FC = () => {
               <Suspense fallback={null}>
                 <Switch>
                   <Route path='/' exact render={() => (<Redirect to='/home'/>)} />
-                  {Routes.map((route: RouteInterface, i: number) => {
+                  {Routes.map((route: any, i: number) => {
                     return RouteWithSubRoutes(route, i);
                   })}
                   <Redirect from='/*' to='/' />
